@@ -15,18 +15,9 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "W/S",
+                    "name": "Move",
                     "type": "Button",
                     "id": "e3344842-9b5d-40f6-8ba8-955fdc348d29",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "Arrows",
-                    "type": "Button",
-                    "id": "d7567d26-699c-4700-95e3-11a90cc6115e",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -52,7 +43,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "W/S",
+                    "action": "Move",
                     "isComposite": true,
                     "isPartOfComposite": false
                 },
@@ -63,7 +54,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "W/S",
+                    "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -74,40 +65,40 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "W/S",
+                    "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
                 {
                     "name": "1D Axis",
-                    "id": "2a1288db-5349-45c2-9d0a-8b0752a3f49a",
+                    "id": "4b3bd620-9432-4cba-b51b-61ffbe536a70",
                     "path": "1DAxis",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Arrows",
+                    "action": "Move",
                     "isComposite": true,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "negative",
-                    "id": "922cd81a-3c3e-46df-8043-2c0402a4a4dd",
+                    "id": "1d2338bb-8598-4113-bd53-9afaef79c869",
                     "path": "<Keyboard>/downArrow",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Arrows",
+                    "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
                 {
                     "name": "positive",
-                    "id": "595a45f4-c141-4bd9-8589-eb748ab286c9",
+                    "id": "216bf760-099c-4740-a345-f084ed13efa2",
                     "path": "<Keyboard>/upArrow",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Arrows",
+                    "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": true
                 }

@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Bullet
+  - Enemies
+  - KillWall
+  - HealthWall
   layers:
   - Default
   - TransparentFX
@@ -41,4 +44,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Tank_Explosion_anim
+    uniqueID: 2782298531
     locked: 0

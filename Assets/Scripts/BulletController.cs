@@ -1,15 +1,27 @@
+/*****************************************************************************
+// File Name : BulletController.cs
+// Author : Jimmy D.
+// Creation Date : 8/26/2025
+//
+// Brief Description : Script for Bullet stuff
+*****************************************************************************/
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BulletController : MonoBehaviour
 {
    [SerializeField] private Rigidbody2D BulletRB2D;
-   [SerializeField] private Rigidbody2D RB2D;
-      
+   [SerializeField] private GameManager GM;
 
-    // [SerializeField] private AudioClip EnemyDeathSound;
-    [SerializeField] private AudioClip BulletSound;
+   [SerializeField] private EnemyController EC;
+
+    [SerializeField] Animator Anim;
+
+    /// <summary>
+    /// bullet goes to the right 
+    /// </summary>
     void Start()
     {
         
@@ -21,11 +33,25 @@ public class BulletController : MonoBehaviour
     {
         
     }
-    private void OnTriggerEnter2D(Collider2D collision)
+
+    /// <summary>
+    /// deletes the bullet if it misses enemies 
+    /// </summary>
+    /// <param name="collision"></param>
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-       // AudioSource.PlayClipAtPoint(EnemyDeathSound, transform.position);
-        Destroy(collision.gameObject);
-        Destroy(gameObject);
+        if (collision.gameObject.CompareTag("KillWall"))
+        {
+            Destroy(gameObject);
+            Debug.Log("DEAD");
+        }
+
+        
+
     }
+
+    
+
+
 
 }
